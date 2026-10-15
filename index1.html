@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SCCT Campus Connect</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+ <div class="nav">
+  <a href="#" class="brand" onclick="showPage('home');return false"><span class="logo">S</span><span><strong>SCCT Campus Connect</strong><small>Learn · Grow · Build Your Future</small></span></a>
+  <button class="menu-btn" onclick="document.querySelector('nav').classList.toggle('open')">☰ Menu</button>
+  <nav id="mainNav">
+   <a href="#home" class="active" data-page="home">Home & About</a>
+   <a href="#fyjc" data-page="fyjc">FYJC Admission</a>
+   <a href="#syjc" data-page="syjc">SYJC Admission</a>
+   <a href="#courses" data-page="courses">Degree Courses</a>
+   <a href="#events" data-page="events">Events</a>
+  </nav>
+ </div>
+</header>
+<main>
+<section id="home" class="page active">
+ <div class="hero">
+  <div class="hero-copy"><div class="eyebrow">Welcome to SCCT</div><h1>Your College.<br>Your Community.</h1><p>Discover admission information, explore academic pathways, stay updated with campus events, and connect with the SCCT student community.</p><a class="btn" href="#fyjc" onclick="showPage('fyjc');return false">Explore Admissions →</a> <a class="btn secondary" href="#about" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'});return false">About SCCT</a></div>
+  <div class="hero-art"><div class="campus-card"><div class="campus-building"></div><h3>Sanpada College of Commerce and Technology</h3><p>Learn · Grow · Build Your Future</p></div></div>
+ </div>
+ <div class="section-head" id="about"><div class="eyebrow">About the college</div><h2>Welcome to SCCT Campus Connect</h2><p>A student-friendly information hub concept for Sanpada College of Commerce and Technology, designed to make key admission, course and campus-event information easier to find.</p></div>
+ <div class="grid">
+  <article class="card"><div class="icon">🎓</div><h3>Academic Pathways</h3><p>Explore junior college Commerce and Science streams and undergraduate degree options.</p></article>
+  <article class="card"><div class="icon">📚</div><h3>Student Resources</h3><p>Find a starting point for admission steps, subject information and enquiry contacts.</p></article>
+  <article class="card"><div class="icon">🎉</div><h3>Campus Life</h3><p>Discover celebrations, sports, competitions and activities that bring students together.</p></article>
+ </div>
+ <div class="section-head"><div class="eyebrow">Contact & Visit</div><h2>Get in touch with SCCT</h2><p>Use the official contact details below for current admissions, course availability, fees and office timings.</p></div>
+ <div class="grid">
+  <article class="card"><div class="icon">📍</div><h3>College Address</h3><p>Sanpada College of Commerce and Technology<br>Plot No. 3, 4, 5, Sector 2, Sanpada (West), behind Sanpada Railway Station, Navi Mumbai – 400705.</p><a href="https://scct.edu.in/contact-us/" target="_blank" rel="noopener">Official contact page ↗</a></article>
+  <article class="card"><div class="icon">☎️</div><h3>Phone Numbers</h3><p><a href="tel:+912227758715">022-27758715</a><br><a href="tel:+912227753117">022-27753117</a><br><a href="tel:+912227751116">022-27751116</a></p></article>
+  <article class="card"><div class="icon">✉️</div><h3>Email</h3><p><a href="mailto:enquiry@scct.edu.in">enquiry@scct.edu.in</a></p><p>For updated admission notices, please check the official college website.</p><a href="https://scct.edu.in/" target="_blank" rel="noopener">scct.edu.in ↗</a></article>
+ </div>
+ <div class="info-strip"><div><strong>Junior College</strong><span>FYJC & SYJC · Commerce and Science</span></div><div><strong>Degree Programs</strong><span>Commerce, Management, Media and Computing</span></div><div><strong>Student Community</strong><span>Learning, activities and campus engagement</span></div></div>
+</section>
+
+<section id="fyjc" class="page">
+ <div class="section-head"><div class="eyebrow">Junior College · Standard XI</div><h2>FYJC Admission Details</h2><p>Start your Class 11 journey by choosing the stream that matches your interests and future plans.</p></div>
+ <div class="grid two">
+  <article class="card"><span class="pill">COMMERCE</span><h3>📈 Commerce Stream</h3><p>Build a foundation in business, accounting, economics and commercial practices.</p><strong>Common subject areas</strong><div class="subject-list"><span>English / language</span><span>Book-Keeping & Accountancy</span><span>Economics</span><span>Organisation of Commerce & Management</span><span>Secretarial Practice</span><span>Mathematics & Statistics (where offered)</span><span>Information Technology (where offered)</span></div></article>
+  <article class="card"><span class="pill">SCIENCE</span><h3>🧪 Science Stream</h3><p>Explore scientific concepts and prepare for further study in science, technology, healthcare and related fields.</p><strong>Common subject areas</strong><div class="subject-list"><span>English / language</span><span>Physics</span><span>Chemistry</span><span>Mathematics</span><span>Biology (subject combination)</span><span>Information Technology (where offered)</span></div></article>
+ </div>
+ <div class="grid two" style="margin-top:16px">
+  <article class="card"><h3>Admission Checklist</h3><p>1. Follow the current Maharashtra FYJC Centralised Admission Process (CAP) instructions where applicable.</p><p>2. Complete the required online registration and preferences.</p><p>3. Review merit/allotment updates and the college's instructions.</p><p>4. Submit required documents and complete verification within the stated deadline.</p></article>
+  <article class="card"><h3>Commonly requested documents</h3><p>• SSC marksheet and passing certificate</p><p>• School leaving / transfer certificate</p><p>• Recent photograph and identity details</p><p>• Caste / category certificate, if applicable</p><p>• Any additional documents listed in the official admission notice</p></article>
+ </div>
+ <div class="notice"><strong>Please verify:</strong> Subject combinations, optional subjects, eligibility, seat availability, dates and the admission process can change. This student-project page is a general guide, not an official admission notice.</div>
+ <div class="section-head"><h2>FYJC Admission Enquiry</h2><p>Fill in this demo form to see how an enquiry section can work. It does not send information to the college.</p></div>
+ <div class="card"><form onsubmit="demoSubmit(event,'FYJC')"><div class="form-grid"><div><label for="fyname">Student name</label><input id="fyname" required placeholder="Enter full name"></div><div><label for="fyphone">Phone number</label><input id="fyphone" required type="tel" pattern="[0-9 +()-]{8,16}" placeholder="Enter contact number"></div><div><label for="fyemail">Email address</label><input id="fyemail" type="email" required placeholder="you@example.com"></div><div><label for="fystream">Preferred stream</label><select id="fystream" required><option value="">Choose a stream</option><option>Commerce</option><option>Science</option></select></div></div><label for="fyquestion">Your question</label><textarea id="fyquestion" placeholder="Ask about admission, subjects or documents"></textarea><button class="btn" type="submit">Submit Demo Enquiry →</button></form></div>
+</section>
+
+<section id="syjc" class="page">
+ <div class="section-head"><div class="eyebrow">Junior College · Standard XII</div><h2>SYJC Admission Details</h2><p>Continue Class 12 in the stream selected in Class 11, subject to the college's promotion and admission requirements.</p></div>
+ <div class="grid two">
+  <article class="card"><span class="pill">COMMERCE</span><h3>📊 SYJC Commerce</h3><p>Continue building skills in finance, accounting, business and economics.</p><strong>Common subject areas</strong><div class="subject-list"><span>English / language</span><span>Book-Keeping & Accountancy</span><span>Economics</span><span>Organisation of Commerce & Management</span><span>Secretarial Practice</span><span>Mathematics & Statistics (if selected)</span><span>Information Technology (if selected)</span></div></article>
+  <article class="card"><span class="pill">SCIENCE</span><h3>🔬 SYJC Science</h3><p>Deepen your understanding of scientific principles and prepare for HSC examinations and further study.</p><strong>Common subject areas</strong><div class="subject-list"><span>English / language</span><span>Physics</span><span>Chemistry</span><span>Mathematics (PCM combination)</span><span>Biology (PCB / related combination)</span><span>Information Technology (if selected)</span></div></article>
+ </div>
+ <div class="grid two" style="margin-top:16px">
+  <article class="card"><h3>Promotion & Admission Steps</h3><p>• Check the college's official notice and academic calendar.</p><p>• Confirm promotion requirements and subject combination.</p><p>• Complete the college's SYJC continuation / admission formalities.</p><p>• Pay applicable fees only through the official process.</p></article>
+  <article class="card"><h3>Keep ready</h3><p>• FYJC marksheet / result</p><p>• College identity or enrolment details</p><p>• Required continuation forms</p><p>• Any documents requested by the college office</p></article>
+ </div>
+ <div class="notice">The exact subject combination depends on the Maharashtra State Board scheme and the subjects offered/selected by the student. Confirm the current list with SCCT before relying on it.</div>
+ <div class="section-head"><h2>SYJC Enquiry</h2><p>Demo form only; no data is transmitted.</p></div>
+ <div class="card"><form onsubmit="demoSubmit(event,'SYJC')"><div class="form-grid"><div><label for="syn">Student name</label><input id="syn" required placeholder="Enter full name"></div><div><label for="syp">Phone number</label><input id="syp" required type="tel" pattern="[0-9 +()-]{8,16}" placeholder="Enter contact number"></div><div><label for="sys">Stream</label><select id="sys" required><option value="">Choose a stream</option><option>Commerce</option><option>Science</option></select></div><div><label for="syemail">Email address</label><input id="syemail" required type="email" placeholder="you@example.com"></div></div><label for="syq">Your question</label><textarea id="syq" placeholder="Ask your SYJC question"></textarea><button class="btn" type="submit">Submit Demo Enquiry →</button></form></div>
+</section>
+
+<section id="courses" class="page">
+ <div class="section-head"><div class="eyebrow">Undergraduate Programs</div><h2>Degree Courses</h2><p>Explore undergraduate programs listed by SCCT and affiliated with the University of Mumbai; confirm current intake, eligibility and curriculum with the college.</p></div>
+ <div class="grid">
+  <article class="card"><div class="icon">💼</div><h3>B.Com</h3><p><strong>Bachelor of Commerce</strong></p><p>Accounting, commerce, business, economics and finance fundamentals.</p></article>
+  <article class="card"><div class="icon">📈</div><h3>BMS</h3><p><strong>Bachelor of Management Studies</strong></p><p>Management, marketing, human resources and business strategy.</p></article>
+  <article class="card"><div class="icon">🎬</div><h3>BAMMC</h3><p><strong>Bachelor of Arts in Multimedia and Mass Communication</strong></p><p>Media, communication, content, journalism and multimedia concepts.</p></article>
+  <article class="card"><div class="icon">🧾</div><h3>BAF</h3><p><strong>Bachelor of Accounting and Finance</strong></p><p>Accounting, financial management, taxation and reporting foundations.</p></article>
+  <article class="card"><div class="icon">🏦</div><h3>BBI</h3><p><strong>Bachelor of Banking and Insurance</strong></p><p>Banking operations, insurance, risk and financial services.</p></article>
+  <article class="card"><div class="icon">💻</div><h3>B.Sc. IT</h3><p><strong>Bachelor of Science in Information Technology</strong></p><p>Programming, databases, networking, web development and IT systems.</p></article>
+  <article class="card"><div class="icon">🖥️</div><h3>B.Sc. CS</h3><p><strong>Bachelor of Science in Computer Science</strong></p><p>Computer science, programming, algorithms, software and computing theory.</p></article>
+ </div>
+ <div class="notice">Eligibility varies by degree. Some programs have specific subject and percentage requirements. Check the latest SCCT prospectus and University of Mumbai admission notices before applying.</div>
+ <p><a class="btn" href="https://scct.edu.in/admission/degree-college/" target="_blank" rel="noopener">Check Official Degree Admission Information ↗</a></p>
+</section>
+
+<section id="events" class="page">
+ <div class="section-head"><div class="eyebrow">Student Life</div><h2>College Events & Activities</h2><p>College life is more than classrooms—take part, build skills, meet classmates and celebrate achievements.</p></div>
+ <div class="grid two">
+  <article class="card event-card"><div class="event-date">DEC<small>ANNUAL</small></div><div><span class="pill">CULTURAL</span><h3>Annual Day</h3><p>A celebration of student achievements, performances, creativity and college memories. Usually planned around December; confirm the year's date with the college.</p></div></article>
+  <article class="card event-card"><div class="event-date">TBA<small>SPORTS</small></div><div><span class="pill">ATHLETICS</span><h3>Annual Sports Meet</h3><p>Sports competitions and team activities that encourage fitness, discipline and sportsmanship.</p></div></article>
+  <article class="card event-card"><div class="event-date">TBA<small>SKILLS</small></div><div><span class="pill">COMPETITIONS</span><h3>Competitive Events</h3><p>Showcase your talents through quizzes, presentations, coding, debates, cultural contests and other activities, as scheduled.</p></div></article>
+  <article class="card event-card"><div class="event-date">TBA<small>WELCOME</small></div><div><span class="pill">STUDENT LIFE</span><h3>Freshers' Party</h3><p>A welcome event for new FY students to connect with classmates and become part of the campus community.</p></div></article>
+  <article class="card event-card"><div class="event-date">TBA<small>FAREWELL</small></div><div><span class="pill">CELEBRATION</span><h3>Farewell</h3><p>A send-off for graduating students to celebrate friendships, experiences and the next chapter ahead.</p></div></article>
+ </div>
+ <div class="notice">Event dates, registration rules and venues shown here are not official announcements. Follow college notices or contact the office for confirmed schedules.</div>
+ <div class="card"><h3>Ask about an event</h3><form onsubmit="demoSubmit(event,'Event')"><div class="form-grid"><div><label for="evname">Your name</label><input id="evname" required placeholder="Enter your name"></div><div><label for="evemail">Email address</label><input id="evemail" required type="email" placeholder="you@example.com"></div></div><label for="evtype">Event</label><select id="evtype" required><option value="">Choose an event</option><option>Annual Day</option><option>Annual Sports Meet</option><option>Competitive Events</option><option>Freshers' Party</option><option>Farewell</option></select><label for="evmsg">Question</label><textarea id="evmsg" placeholder="What would you like to know?"></textarea><button class="btn" type="submit">Send Demo Enquiry →</button></form></div>
+</section>
+</main>
+<footer><div class="footer-inner"><div><div class="brand"><span class="logo">S</span><span><strong>SCCT Campus Connect</strong><small>Learn · Grow · Build Your Future</small></span></div><p>A student project concept to make college information easier to explore.</p></div><div><strong>Quick Links</strong><a href="#home" onclick="showPage('home');return false">Home & About</a><a href="#fyjc" onclick="showPage('fyjc');return false">FYJC Admission</a><a href="#syjc" onclick="showPage('syjc');return false">SYJC Admission</a><a href="#courses" onclick="showPage('courses');return false">Degree Courses</a><a href="#events" onclick="showPage('events');return false">College Events</a></div><div><strong>Contact</strong><p>Plot No. 3, 4, 5, Sector 2, Sanpada (West), Navi Mumbai – 400705</p><p><a href="tel:+912227758715">022-27758715</a><br><a href="mailto:enquiry@scct.edu.in">enquiry@scct.edu.in</a></p><a href="https://scct.edu.in/" target="_blank" rel="noopener">Official college website ↗</a></div></div><div class="copyright">© 2026 SCCT Campus Connect · Student project demo · Verify official details with SCCT.</div></footer>
+<script src="script.js" defer></script>
+</body>
+</html>
